@@ -1,0 +1,91 @@
+/* Register Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
+
+.register-container {
+    max-width: 450px;
+    margin: 60px auto;
+    background: rgba(80, 66, 7, 0.08);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.register-container h2 {
+    color: rgb(0, 51, 102);
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.register-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-form input {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.register-form input:focus {
+    border-color: rgb(0, 51, 102);
+    box-shadow: 0 0 6px rgba(0,51,102,0.4);
+    outline: none;
+}
+
+.register-form button {
+    background: rgb(0, 51, 102);
+    color: silver;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.register-form button:hover {
+    background: rgb(80, 66, 7);
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: rgb(0, 51, 102);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
